@@ -1,0 +1,9 @@
+# Baseline de referência migrado do Arbovirose-Dengue (commit 402f845).
+# Config fixada em docs/features_baseline.md; esquema de validação em docs/validacao_atual.md.
+
+features = "e0-geo"          # lag+clima-ambos+RA+geo-ovi, sem Censo (decisão 4)
+modelos = ["RF", "XGB"]
+ano_teste = 2025
+horizontes = [1, 2, 3, 4]
+modos = ["nowcast", "direto"]
+seed = 42
